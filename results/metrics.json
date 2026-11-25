@@ -1,0 +1,40 @@
+{
+  "surrogate": {
+    "train_samples": 24000,
+    "test_samples": 6000,
+    "inlet_mae_c": 0.092,
+    "inlet_r2": 0.9993,
+    "hottest_inlet_mae_c": 0.125
+  },
+  "week_simulation": {
+    "Baseline (18 \u00b0C, 120 % air)": {
+      "mean_pue": 1.641,
+      "cooling_energy_kwh": 13428.1,
+      "mean_supply_temp_c": 18.0,
+      "mean_airflow_ratio": 1.2,
+      "hottest_inlet_seen_c": 20.18,
+      "steps_over_27c": 0,
+      "cooling_energy_saving_pct": 0.0
+    },
+    "NN-surrogate optimiser": {
+      "mean_pue": 1.398,
+      "cooling_energy_kwh": 7814.4,
+      "mean_supply_temp_c": 23.46,
+      "mean_airflow_ratio": 0.976,
+      "hottest_inlet_seen_c": 26.4,
+      "steps_over_27c": 0,
+      "cooling_energy_saving_pct": 41.8
+    },
+    "Oracle optimiser (physics model)": {
+      "mean_pue": 1.398,
+      "cooling_energy_kwh": 7805.4,
+      "mean_supply_temp_c": 23.79,
+      "mean_airflow_ratio": 0.996,
+      "hottest_inlet_seen_c": 26.0,
+      "steps_over_27c": 0,
+      "cooling_energy_saving_pct": 41.9
+    }
+  },
+  "steps": 672,
+  "it_energy_kwh": 23123.6
+}
